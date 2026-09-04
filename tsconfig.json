@@ -11,8 +11,6 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "sourceMap": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
     "paths": {
       "@rag/*": ["../*/src"]
     }
