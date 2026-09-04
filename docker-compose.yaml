@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: advance_rag_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: rag_user
+      POSTGRES_PASSWORD: rag_password
+      POSTGRES_DB: rag_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - advance_rag_data:/var/lib/postgresql/data
+
+volumes:
+  advance_rag_data:

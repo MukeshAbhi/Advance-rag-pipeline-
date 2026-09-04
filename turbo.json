@@ -1,0 +1,16 @@
+{
+  "globalEnv": ["DATABASE_URL", "AI_API_KEY"],
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "type-check": {
+      "cache": false
+    }
+  }
+}
